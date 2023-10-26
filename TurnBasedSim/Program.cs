@@ -14,8 +14,10 @@ namespace TurnBasedSim
             int playerHP = 100;
             int enemyHP = 75;
             int playerAttack = 10;
-            int enemyAttack = 20;
+            int enemyAttack = 15;
+            int attackCounter = 0;
             int healAmount = 5;
+
             Random random = new Random();
 
             Console.WriteLine("Welcome Player. Let's Begin Our Journey!");
@@ -41,9 +43,23 @@ namespace TurnBasedSim
 
                 if (choice == "a")
                 {
-                    enemyHP -= playerAttack;
-                    if (enemyHP < 0) enemyHP = 0; // Ensure enemy HP doesn't go negative
-                    Console.WriteLine($"{playerName} lands an attack and deals " + playerAttack + " damage!");
+                    attackCounter++;
+
+                    if (attackCounter == 3)
+                    {
+                        enemyHP -= (playerAttack * 2);
+                        Console.WriteLine($"{playerName} lands a critical attack and deals " + (playerAttack * 2) + " damage!");
+                        if (enemyHP < 0) enemyHP = 0;
+                        attackCounter = 0;
+                    }
+                    else
+                    {
+                        enemyHP -= playerAttack;
+                        Console.WriteLine($"{playerName} lands an attack and deals " + playerAttack + " damage!");
+                        if (enemyHP < 0) enemyHP = 0; // Ensure enemy HP doesn't go negative
+                    }
+
+
                 }
                 else
                 {
@@ -61,14 +77,14 @@ namespace TurnBasedSim
                     if (enemyChoice == 0)
                     {
                         playerHP -= enemyAttack;
-                        if (playerHP < 0) playerHP = 0; // Ensure player HP doesn't go negative
                         Console.WriteLine("The enemy lands an attack and deals " + enemyAttack + $" damage to {playerName}");
+                        if (playerHP < 0) playerHP = 0; // Ensure player HP doesn't go negative
                     }
                     else if (enemyChoice == 1)
                     {
                         playerHP -= enemyAttack + 5;
-                        if (playerHP < 0) playerHP = 0; // Ensure player HP doesn't go negative
                         Console.WriteLine("The enemy lands a critical attack and deals " + (enemyAttack + 5) + $" damage to {playerName}");
+                        if (playerHP < 0) playerHP = 0; // Ensure player HP doesn't go negative
                     }
                     else
                     {
@@ -83,7 +99,7 @@ namespace TurnBasedSim
             {
                 Console.WriteLine("You have perished!");
             }
-            else if (enemyHP <= 0)
+            if (enemyHP <= 0)
             {
                 Console.WriteLine("Congratulations! You defeated the Enemy!");
             }
