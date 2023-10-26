@@ -18,73 +18,77 @@ namespace TurnBasedSim
             int healAmount = 5;
             Random random = new Random();
 
-            Console.WriteLine(" Welcome Player. Let's Begin Our Journey! ");
-            Console.WriteLine(" Tell us your name ");
+            Console.WriteLine("Welcome Player. Let's Begin Our Journey!");
+            Console.WriteLine("Tell us your name:");
 
             playerName = Console.ReadLine();
 
-            Console.WriteLine(" Player HP " + playerHP + " Enemy HP " + enemyHP);
+            Console.WriteLine("Player HP " + playerHP + " Enemy HP " + enemyHP);
 
-            while (playerHP >= 0 && enemyHP >= 0)
+            while (playerHP > 0 && enemyHP > 0)
             {
                 // Player turn
                 Console.WriteLine($"--- {playerName}'s turn ---");
-                Console.WriteLine(" Player HP " + playerHP + " Enemy HP " + enemyHP);
-                Console.WriteLine("Press 'a' to attack or 'h' to heal.");
+                Console.WriteLine("Player HP " + playerHP + " Enemy HP " + enemyHP);
 
-                string choice = Console.ReadLine().ToLower();
+                // Prompt the user until a valid choice is made
+                string choice = "";
+                while (choice != "a" && choice != "h")
+                {
+                    Console.WriteLine("Press 'a' to attack or 'h' to heal.");
+                    choice = Console.ReadLine().ToLower();
+                }
 
                 if (choice == "a")
                 {
                     enemyHP -= playerAttack;
-                    Console.WriteLine($"{playerName} lands an attack and deals" + playerAttack + "damage!");
+                    if (enemyHP < 0) enemyHP = 0; // Ensure enemy HP doesn't go negative
+                    Console.WriteLine($"{playerName} lands an attack and deals " + playerAttack + " damage!");
                 }
                 else
                 {
                     playerHP += healAmount;
-                    Console.WriteLine($"{playerName} restores health by " + healAmount + "points!");
+                    Console.WriteLine($"{playerName} restores health by " + healAmount + " points!");
                 }
-               
 
-                //Enemy turn
+                // Enemy turn
                 if (enemyHP > 0)
                 {
                     Console.WriteLine("--- Enemy's turn ---");
-                    Console.WriteLine(" Player HP " + playerHP + " Enemy HP" + enemyHP);
+                    Console.WriteLine("Player HP " + playerHP + " Enemy HP " + enemyHP);
                     int enemyChoice = random.Next(0, 3);
 
                     if (enemyChoice == 0)
                     {
-
                         playerHP -= enemyAttack;
-                        Console.WriteLine("The enemy lands an attack and deals " + enemyAttack + $"damage to {playerName}");
+                        if (playerHP < 0) playerHP = 0; // Ensure player HP doesn't go negative
+                        Console.WriteLine("The enemy lands an attack and deals " + enemyAttack + $" damage to {playerName}");
                     }
                     else if (enemyChoice == 1)
                     {
-
-                        playerHP -= enemyAttack+5;
-                        Console.WriteLine("The enemy lands a critical attack and deals " + enemyAttack + $"damage to {playerName}");
+                        playerHP -= enemyAttack + 5;
+                        if (playerHP < 0) playerHP = 0; // Ensure player HP doesn't go negative
+                        Console.WriteLine("The enemy lands a critical attack and deals " + (enemyAttack + 5) + $" damage to {playerName}");
                     }
                     else
                     {
                         enemyHP += healAmount;
-                        Console.WriteLine("The Enemy restores health by " + healAmount + "points!");
-
+                        Console.WriteLine("The Enemy restores health by " + healAmount + " points!");
+                        if (enemyHP < 0) enemyHP = 0; // Ensure enemy HP doesn't go negative
                     }
-
                 }
-
             }
+
             if (playerHP <= 0)
             {
-                Console.WriteLine("You have perished !");
+                Console.WriteLine("You have perished!");
             }
             else if (enemyHP <= 0)
             {
                 Console.WriteLine("Congratulations! You defeated the Enemy!");
             }
 
-            Console.WriteLine(" Thank you for playing! ");
+            Console.WriteLine("Thank you for playing!");
         }
     }
 }
