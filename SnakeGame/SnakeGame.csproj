@@ -79,13 +79,17 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Direction.cs" />
+    <Compile Include="GameState.cs" />
     <Compile Include="GridValue.cs" />
+    <Compile Include="Images.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Position.cs" />
+    <Compile Include="PositionBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
