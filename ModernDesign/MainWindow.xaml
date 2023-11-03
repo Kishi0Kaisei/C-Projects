@@ -16,8 +16,50 @@
         CornerRadius="20">
 
         <Grid>
-            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75">
+                </RowDefinition>
+            </Grid.RowDefinitions>
+
+            <TextBlock
+                Text="2Koi"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Foreground="White"
+                FontSize="22"
+                Margin="20,0,0,0"/>
+
+            <StackPanel Grid.Row="1"/>
+
+            <RadioButton Content="Home"
+                         Height="50"
+                         Foreground="White"
+                         FontSize="14"
+                         Style="{StaticResource ResourceKey= MenuButtonTheme}" Margin="0,86,0,-60"/>
+
+            <RadioButton Content="About"
+                         Height="50"
+                         Foreground="White"
+                         FontSize="14"
+                         Style="{StaticResource ResourceKey=MenuButtonTheme}" Margin="0,141,0,-115"/>
+
+            <RadioButton Content="Discovery"
+                         Height="50"
+                         Foreground="White"
+                         FontSize="14"
+                         Style="{StaticResource ResourceKey=MenuButtontheme}" Margin="0,196,0,-170"/>
+
+            <StackPanel/>
+
+
+
+
         </Grid>
-        
+
     </Border>
 </Window>
