@@ -37,9 +37,9 @@ namespace ATMinterface
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -86,14 +86,10 @@ namespace ATMinterface
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
             // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.button1, "button1");
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Name = "button1";
@@ -105,13 +101,18 @@ namespace ATMinterface
             this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label5.Name = "label5";
             // 
+            // textBox3
+            // 
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            // 
             // Login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
@@ -137,8 +138,8 @@ namespace ATMinterface
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

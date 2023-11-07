@@ -224,19 +224,19 @@
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
+        R7XaLyZ7+zmLzWlIAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
@@ -279,7 +279,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 146</value>
+    <value>205, 146</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 24</value>
@@ -347,11 +347,14 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Modern No. 20, 9.75pt</value>
+  </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>342, 149</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 20</value>
+    <value>146, 21</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -367,27 +370,6 @@
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 201</value>
-  </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 20</value>
-  </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Modern No. 20, 11.999999pt</value>
@@ -414,7 +396,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -456,6 +438,30 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Modern No. 20, 9.75pt</value>
+  </data>
+  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 201</value>
+  </data>
+  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 21</value>
+  </data>
+  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
+    <value>textBox3</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
