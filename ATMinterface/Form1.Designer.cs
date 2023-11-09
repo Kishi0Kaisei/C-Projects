@@ -1,7 +1,7 @@
 ﻿
 namespace ATMinterface
 {
-    partial class Splash
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.

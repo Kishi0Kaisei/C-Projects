@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balance.Designer.cs">
+      <DependentUpon>Balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePin.Designer.cs">
+      <DependentUpon>ChangePin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +84,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balance.resx">
+      <DependentUpon>Balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePin.resx">
+      <DependentUpon>ChangePin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
