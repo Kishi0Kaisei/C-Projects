@@ -167,7 +167,7 @@ namespace ATMinterface
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 42);
             this.button1.TabIndex = 19;
-            this.button1.Text = "LOGIN";
+            this.button1.Text = "CONFIRM";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // ChangePin
