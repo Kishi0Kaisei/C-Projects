@@ -45,7 +45,7 @@ namespace ATMinterface
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(158, 9);
+            this.label1.Location = new System.Drawing.Point(153, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(493, 36);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@ namespace ATMinterface
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 425);
+            this.progressBar1.Location = new System.Drawing.Point(11, 423);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(776, 13);
             this.progressBar1.TabIndex = 2;
@@ -62,7 +62,7 @@ namespace ATMinterface
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(315, 99);
+            this.pictureBox1.Location = new System.Drawing.Point(315, 80);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(169, 166);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -76,7 +76,7 @@ namespace ATMinterface
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(382, 376);
+            this.label2.Location = new System.Drawing.Point(384, 352);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 36);
             this.label2.TabIndex = 4;
@@ -90,7 +90,7 @@ namespace ATMinterface
             this.label3.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(158, 322);
+            this.label3.Location = new System.Drawing.Point(153, 281);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(493, 36);
             this.label3.TabIndex = 5;
@@ -102,7 +102,7 @@ namespace ATMinterface
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(805, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);

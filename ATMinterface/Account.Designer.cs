@@ -59,7 +59,7 @@ namespace ATMinterface
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 100);
+            this.panel1.Size = new System.Drawing.Size(800, 75);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -69,7 +69,7 @@ namespace ATMinterface
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(154, 32);
+            this.label1.Location = new System.Drawing.Point(154, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(493, 36);
             this.label1.TabIndex = 1;
