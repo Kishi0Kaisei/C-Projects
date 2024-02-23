@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Anotacao_Consts\Anotacao_Consts.csproj" />
+    <ProjectReference Include="..\Anotacoes_Config\Anotacoes_Config.csproj" />
+    <ProjectReference Include="..\Compromissos_Models2Api\Anotacao_Models2Api.csproj" />
+  </ItemGroup>
+
+</Project>
